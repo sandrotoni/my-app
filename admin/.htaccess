@@ -1,0 +1,8 @@
+AuthUserFile /web/htdocs/www.etronic.org/home//webapp/admin/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Gestione WebApp"
+AuthType Basic
+DirectoryIndex webapp.php
+<Limit GET POST>
+require valid-user
+</Limit>
